@@ -1,10 +1,14 @@
 {
-  "name": "openclaw",
+  "name": "augurium-openclaw",
   "version": "2026.2.9",
-  "description": "Multi-channel AI gateway with extensible messaging integrations",
-  "keywords": [],
+  "description": "Augurium.ai multi-channel AI chat gateway — Luna, Atlas, Nova lottery prediction agents",
+  "keywords": ["augurium", "lottery", "ai", "chat", "openclaw"],
   "license": "MIT",
-  "author": "",
+  "author": "Agenticware LLC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Agenticware/augurium-openclaw.git"
+  },
   "bin": {
     "openclaw": "openclaw.mjs"
   },

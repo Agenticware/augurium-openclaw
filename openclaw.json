@@ -1,0 +1,107 @@
+{
+  "env": {
+    "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+    "vars": {
+      "FASTAPI_URL": "${FASTAPI_URL}",
+      "INTERNAL_API_KEY": "${INTERNAL_API_KEY}"
+    }
+  },
+
+  "gateway": {
+    "port": 18789,
+    "bind": "lan",
+    "auth": {
+      "mode": "token",
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    }
+  },
+
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/xiaomi/mimo-v2-flash"
+      },
+      "sandbox": {
+        "mode": "off"
+      },
+      "tools": {
+        "profile": "minimal",
+        "alsoAllow": ["exec"]
+      }
+    },
+    "list": [
+      {
+        "id": "luna",
+        "default": true,
+        "name": "Luna",
+        "workspace": "./workspace/luna",
+        "identity": {
+          "name": "Luna",
+          "emoji": "\ud83c\udf19",
+          "theme": "Intuitive lottery prediction guide for Fantasy 5"
+        },
+        "skills": [
+          "predict-numbers",
+          "draw-history",
+          "theory-breakdown",
+          "astrology-aspects",
+          "prediction-accuracy",
+          "knowledge-graph"
+        ]
+      },
+      {
+        "id": "atlas",
+        "name": "Atlas",
+        "workspace": "./workspace/atlas",
+        "identity": {
+          "name": "Atlas",
+          "emoji": "\ud83d\udd34",
+          "theme": "Strategic lottery prediction advisor for PowerBall"
+        },
+        "skills": [
+          "predict-numbers",
+          "draw-history",
+          "theory-breakdown",
+          "astrology-aspects",
+          "prediction-accuracy",
+          "knowledge-graph"
+        ]
+      },
+      {
+        "id": "nova",
+        "name": "Nova",
+        "workspace": "./workspace/nova",
+        "identity": {
+          "name": "Nova",
+          "emoji": "\ud83d\udcab",
+          "theme": "Analytical lottery prediction explorer for Mega Millions"
+        },
+        "skills": [
+          "predict-numbers",
+          "draw-history",
+          "theory-breakdown",
+          "astrology-aspects",
+          "prediction-accuracy",
+          "knowledge-graph"
+        ]
+      }
+    ]
+  },
+
+  "tools": {
+    "profile": "minimal",
+    "alsoAllow": ["exec"]
+  },
+
+  "browser": {
+    "enabled": false
+  },
+
+  "logging": {
+    "level": "info"
+  },
+
+  "session": {
+    "maxIdleMinutes": 1440
+  }
+}
