@@ -27,6 +27,17 @@
 - `.env.example` — Added `FASTAPI_URL`, `INTERNAL_API_KEY` vars
 - `Dockerfile` — Copies workspace/config into image, binds to LAN by default
 
+## 2026-02-10 — Enable HTTP API Endpoints
+
+### Added
+- `gateway.http.endpoints.chatCompletions` — OpenAI-compatible `/v1/chat/completions`
+- `gateway.http.endpoints.responses` — `/v1/responses` endpoint for multi-turn tool execution
+
+### Verified
+- All 3 agents (Luna, Atlas, Nova) respond with correct personas
+- Tool execution end-to-end: OpenClaw → curl → FastAPI `/api/internal/tools/*` → real lottery data
+- Luna: Fantasy 5 (11,685 draws), Atlas: PowerBall (2,708 draws), Nova: Mega Millions (1,326 draws)
+
 ## 2026-02-10 — Deployment Fixes
 
 ### Fixed
