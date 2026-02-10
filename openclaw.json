@@ -23,10 +23,6 @@
       },
       "sandbox": {
         "mode": "off"
-      },
-      "tools": {
-        "profile": "minimal",
-        "alsoAllow": ["exec"]
       }
     },
     "list": [
@@ -102,6 +98,6 @@
   },
 
   "session": {
-    "maxIdleMinutes": 1440
+    "idleMinutes": 1440
   }
 }
