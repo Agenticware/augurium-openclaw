@@ -27,6 +27,15 @@
 - `.env.example` — Added `FASTAPI_URL`, `INTERNAL_API_KEY` vars
 - `Dockerfile` — Copies workspace/config into image, binds to LAN by default
 
+## 2026-02-10 — Deployment Fixes
+
+### Fixed
+- Removed `tools` from `agents.defaults` (not valid in OpenClaw schema; use root-level `tools` instead)
+- Changed `session.maxIdleMinutes` → `session.idleMinutes` (correct schema field name)
+- Increased container memory limit from 1GB to 2GB (gateway OOMs during startup at 1GB)
+- Added `NODE_OPTIONS=--max-old-space-size=1536` to container env
+- Increased `start_period` from 30s to 60s for health check
+
 ### Disabled via config (not deleted)
 - Voice/audio streaming
 - Canvas/whiteboard
