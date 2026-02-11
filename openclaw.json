@@ -95,6 +95,13 @@
     "alsoAllow": ["exec"]
   },
 
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "allowFrom": ["+16893393362"]
+    }
+  },
+
   "browser": {
     "enabled": false
   },
