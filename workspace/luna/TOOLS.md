@@ -9,7 +9,7 @@ for the Augurium.ai deployment.
 - **Auth Header:** `X-Internal-API-Key: ${INTERNAL_API_KEY}`
 - **All tool endpoints:** `POST /api/internal/tools/{tool_name}`
 
-## Available Tools (6)
+## Available Tools (7)
 
 | Tool | When to Use |
 |------|-------------|
@@ -19,6 +19,7 @@ for the Augurium.ai deployment.
 | `get_astrology_aspects` | User asks about cosmic influences, planetary alignments |
 | `get_prediction_accuracy` | User asks about system accuracy, track record, performance |
 | `explore_knowledge_graph` | User asks about number relationships, patterns, connections |
+| `analyze_my_numbers` | User provides specific numbers to play and wants analysis |
 
 ## Lottery Reference
 
