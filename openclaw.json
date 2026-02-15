@@ -49,7 +49,9 @@
           "astrology-aspects",
           "prediction-accuracy",
           "knowledge-graph",
-          "analyze-my-numbers"
+          "analyze-my-numbers",
+          "get-number-profile",
+          "get-graph-insights"
         ]
       },
       {
@@ -68,7 +70,9 @@
           "astrology-aspects",
           "prediction-accuracy",
           "knowledge-graph",
-          "analyze-my-numbers"
+          "analyze-my-numbers",
+          "get-number-profile",
+          "get-graph-insights"
         ]
       },
       {
@@ -87,7 +91,9 @@
           "astrology-aspects",
           "prediction-accuracy",
           "knowledge-graph",
-          "analyze-my-numbers"
+          "analyze-my-numbers",
+          "get-number-profile",
+          "get-graph-insights"
         ]
       }
     ]

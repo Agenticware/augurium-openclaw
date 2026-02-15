@@ -9,7 +9,7 @@ for the Augurium.ai deployment.
 - **Auth Header:** `X-Internal-API-Key: ${INTERNAL_API_KEY}`
 - **All tool endpoints:** `POST /api/internal/tools/{tool_name}`
 
-## Available Tools (7)
+## Available Tools (9)
 
 | Tool | When to Use |
 |------|-------------|
@@ -20,6 +20,8 @@ for the Augurium.ai deployment.
 | `get_prediction_accuracy` | User asks about system accuracy, track record, performance |
 | `explore_knowledge_graph` | User asks about number relationships, patterns, connections |
 | `analyze_my_numbers` | User provides specific numbers to play and wants analysis |
+| `get_number_profile` | User asks about a specific number ("tell me about 7", "what's special about 23") |
+| `get_graph_insights` | User asks "what are the best numbers", "what's trending", "give me insights" |
 
 ## Lottery Reference
 
